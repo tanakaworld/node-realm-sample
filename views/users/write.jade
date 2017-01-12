@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+    h1 Write
+
+    a(href='/users') users
+
+    form(action='/users/write', method='POST')
+        input(type='text', name='title')
+        br
+        textarea(name='content')
+        br
+        button(type='submit') Submit
