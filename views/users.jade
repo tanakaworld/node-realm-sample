@@ -3,4 +3,15 @@ extends layout
 block content
     h1 Users
 
-    a(href='/users/write') write
+    br
+
+    a(href='/users/new') new
+
+    br
+
+    if notice
+        p #{notice}
+
+    ul
+        each u in users
+            li #{u.name} | #{u.age} | #{u.createdAt}
