@@ -76,3 +76,6 @@ jspm_packages
 .idea/
 *.css
 *.css.map
+*.realm
+*.realm.lock
+*.realm.management
